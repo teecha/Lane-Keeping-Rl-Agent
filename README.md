@@ -8,8 +8,8 @@ We are in early-devlopement phase, so expect bugs.
 
 If you don't have our git repo, download it using the following command.
 ```bash
-git clone https://github.com/mynkpl1998/upgraded-rotary-phone.git
-cd upgraded-rotary-phone
+git clone https://github.com/teecha/Lane-Keeping-Rl-Agent.git
+cd Lane-Keeping-Rl-Agent
 ```
 
 
