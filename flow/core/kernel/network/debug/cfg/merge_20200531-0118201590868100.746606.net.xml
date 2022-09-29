@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sun May 31 01:18:20 2020 by Eclipse SUMO netconvert Version v1_1_0+0000-2147d155b1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="/home/mayank/Documents/flow/flow/core/kernel/network/debug/net/merge_20200531-0118201590868100.746606.nod.xml"/>
+        <edge-files value="/home/mayank/Documents/flow/flow/core/kernel/network/debug/net/merge_20200531-0118201590868100.746606.edg.xml"/>
+        <type-files value="/home/mayank/Documents/flow/flow/core/kernel/network/debug/net/merge_20200531-0118201590868100.746606.typ.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/mayank/Documents/flow/flow/core/kernel/network/debug/cfg/merge_20200531-0118201590868100.746606.net.xml"/>
+    </output>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</configuration>
+-->
+
+<net version="1.1" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="100.00,0.00" convBoundary="0.00,0.00,100.00,0.00" origBoundary="-100.00,0.00,0.00,0.00" projParameter="!"/>
+
+    <type id="highwayType" numLanes="5" speed="30.00"/>
+
+    <edge id="inflow_highway" from="inflow_highway" to="right" priority="-1" type="highwayType" length="100.00">
+        <lane id="inflow_highway_0" index="0" speed="30.00" length="100.00" shape="0.00,-14.40 100.00,-14.40"/>
+        <lane id="inflow_highway_1" index="1" speed="30.00" length="100.00" shape="0.00,-11.20 100.00,-11.20"/>
+        <lane id="inflow_highway_2" index="2" speed="30.00" length="100.00" shape="0.00,-8.00 100.00,-8.00"/>
+        <lane id="inflow_highway_3" index="3" speed="30.00" length="100.00" shape="0.00,-4.80 100.00,-4.80"/>
+        <lane id="inflow_highway_4" index="4" speed="30.00" length="100.00" shape="0.00,-1.60 100.00,-1.60"/>
+    </edge>
+
+    <junction id="inflow_highway" type="dead_end" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,0.00 0.00,-16.00"/>
+    <junction id="right" type="dead_end" x="100.00" y="0.00" incLanes="inflow_highway_0 inflow_highway_1 inflow_highway_2 inflow_highway_3 inflow_highway_4" intLanes="" shape="100.00,-16.00 100.00,0.00"/>
+
+</net>

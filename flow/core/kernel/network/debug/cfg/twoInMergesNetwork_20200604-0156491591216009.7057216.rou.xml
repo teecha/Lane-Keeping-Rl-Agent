@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+  <route id="routehighway_0_0" edges="highway_0 highway_1 highway_2"/>
+  <route id="routemerge_one_0" edges="merge_one highway_1 highway_2"/>
+  <route id="routemerge_two_0" edges="merge_two highway_2"/>
+</routes>

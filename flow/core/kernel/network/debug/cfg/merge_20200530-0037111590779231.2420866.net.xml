@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sat May 30 00:37:11 2020 by Eclipse SUMO netconvert Version v1_1_0+0000-2147d155b1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="/home/mayank/Documents/flow/flow/core/kernel/network/debug/net/merge_20200530-0037111590779231.2420866.nod.xml"/>
+        <edge-files value="/home/mayank/Documents/flow/flow/core/kernel/network/debug/net/merge_20200530-0037111590779231.2420866.edg.xml"/>
+        <type-files value="/home/mayank/Documents/flow/flow/core/kernel/network/debug/net/merge_20200530-0037111590779231.2420866.typ.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/mayank/Documents/flow/flow/core/kernel/network/debug/cfg/merge_20200530-0037111590779231.2420866.net.xml"/>
+    </output>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</configuration>
+-->
+
+<net version="1.1" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="100.00,141.42" convBoundary="0.00,0.00,400.00,141.42" origBoundary="-100.00,-141.42,300.00,0.00" projParameter="!"/>
+
+    <type id="highwayType" numLanes="5" speed="30.00"/>
+    <type id="mergeType" numLanes="3" speed="30.00"/>
+
+    <edge id=":bottom_0" function="internal">
+        <lane id=":bottom_0_0" index="0" speed="30.00" length="0.10" shape="234.95,65.05 234.95,65.05"/>
+        <lane id=":bottom_0_1" index="1" speed="30.00" length="0.10" shape="232.68,67.32 232.68,67.32"/>
+        <lane id=":bottom_0_2" index="2" speed="30.00" length="0.10" shape="230.42,69.58 230.42,69.58"/>
+    </edge>
+    <edge id=":center_0" function="internal">
+        <lane id=":center_0_0" index="0" speed="17.92" length="30.16" shape="282.59,112.69 288.76,119.23 293.50,123.68 299.03,126.21 307.58,127.02"/>
+    </edge>
+    <edge id=":center_1" function="internal">
+        <lane id=":center_1_0" index="0" speed="18.44" length="31.95" shape="280.32,114.96 287.75,121.63 294.77,126.41 301.38,129.27 307.58,130.22"/>
+    </edge>
+    <edge id=":center_2" function="internal">
+        <lane id=":center_2_0" index="0" speed="19.33" length="35.15" shape="278.06,117.22 284.78,124.23 290.48,129.30 297.35,132.38 307.58,133.42"/>
+    </edge>
+    <edge id=":center_3" function="internal">
+        <lane id=":center_3_0" index="0" speed="30.00" length="33.58" shape="274.00,127.02 307.58,127.02"/>
+        <lane id=":center_3_1" index="1" speed="30.00" length="33.58" shape="274.00,130.22 307.58,130.22"/>
+        <lane id=":center_3_2" index="2" speed="30.00" length="33.58" shape="274.00,133.42 307.58,133.42"/>
+        <lane id=":center_3_3" index="3" speed="30.00" length="33.58" shape="274.00,136.62 307.58,136.62"/>
+        <lane id=":center_3_4" index="4" speed="30.00" length="33.58" shape="274.00,139.82 307.58,139.82"/>
+    </edge>
+    <edge id=":left_0" function="internal">
+        <lane id=":left_0_0" index="0" speed="30.00" length="0.10" shape="100.00,127.02 100.00,127.02"/>
+        <lane id=":left_0_1" index="1" speed="30.00" length="0.10" shape="100.00,130.22 100.00,130.22"/>
+        <lane id=":left_0_2" index="2" speed="30.00" length="0.10" shape="100.00,133.42 100.00,133.42"/>
+        <lane id=":left_0_3" index="3" speed="30.00" length="0.10" shape="100.00,136.62 100.00,136.62"/>
+        <lane id=":left_0_4" index="4" speed="30.00" length="0.10" shape="100.00,139.82 100.00,139.82"/>
+    </edge>
+
+    <edge id="bottom" from="bottom" to="center" priority="-1" type="mergeType" length="100.00">
+        <lane id="bottom_0" index="0" speed="30.00" length="100.00" shape="234.95,65.05 282.59,112.69"/>
+        <lane id="bottom_1" index="1" speed="30.00" length="100.00" shape="232.68,67.32 280.32,114.96"/>
+        <lane id="bottom_2" index="2" speed="30.00" length="100.00" shape="230.42,69.58 278.06,117.22"/>
+    </edge>
+    <edge id="center" from="center" to="right" priority="-1" type="highwayType" length="100.00">
+        <lane id="center_0" index="0" speed="30.00" length="100.00" shape="307.58,127.02 400.00,127.02"/>
+        <lane id="center_1" index="1" speed="30.00" length="100.00" shape="307.58,130.22 400.00,130.22"/>
+        <lane id="center_2" index="2" speed="30.00" length="100.00" shape="307.58,133.42 400.00,133.42"/>
+        <lane id="center_3" index="3" speed="30.00" length="100.00" shape="307.58,136.62 400.00,136.62"/>
+        <lane id="center_4" index="4" speed="30.00" length="100.00" shape="307.58,139.82 400.00,139.82"/>
+    </edge>
+    <edge id="inflow_highway" from="inflow_highway" to="left" priority="-1" type="highwayType" length="100.00">
+        <lane id="inflow_highway_0" index="0" speed="30.00" length="100.00" shape="0.00,127.02 100.00,127.02"/>
+        <lane id="inflow_highway_1" index="1" speed="30.00" length="100.00" shape="0.00,130.22 100.00,130.22"/>
+        <lane id="inflow_highway_2" index="2" speed="30.00" length="100.00" shape="0.00,133.42 100.00,133.42"/>
+        <lane id="inflow_highway_3" index="3" speed="30.00" length="100.00" shape="0.00,136.62 100.00,136.62"/>
+        <lane id="inflow_highway_4" index="4" speed="30.00" length="100.00" shape="0.00,139.82 100.00,139.82"/>
+    </edge>
+    <edge id="inflow_merge" from="inflow_merge" to="bottom" priority="-1" type="mergeType" length="100.00">
+        <lane id="inflow_merge_0" index="0" speed="30.00" length="100.00" shape="164.24,-5.66 234.95,65.05"/>
+        <lane id="inflow_merge_1" index="1" speed="30.00" length="100.00" shape="161.97,-3.39 232.68,67.32"/>
+        <lane id="inflow_merge_2" index="2" speed="30.00" length="100.00" shape="159.71,-1.13 230.42,69.58"/>
+    </edge>
+    <edge id="left" from="left" to="center" priority="-1" type="highwayType" length="200.00">
+        <lane id="left_0" index="0" speed="30.00" length="200.00" shape="100.00,127.02 274.00,127.02"/>
+        <lane id="left_1" index="1" speed="30.00" length="200.00" shape="100.00,130.22 274.00,130.22"/>
+        <lane id="left_2" index="2" speed="30.00" length="200.00" shape="100.00,133.42 274.00,133.42"/>
+        <lane id="left_3" index="3" speed="30.00" length="200.00" shape="100.00,136.62 274.00,136.62"/>
+        <lane id="left_4" index="4" speed="30.00" length="200.00" shape="100.00,139.82 274.00,139.82"/>
+    </edge>
+
+    <junction id="bottom" type="priority" x="229.29" y="70.71" incLanes="inflow_merge_0 inflow_merge_1 inflow_merge_2" intLanes=":bottom_0_0 :bottom_0_1 :bottom_0_2" shape="229.29,70.71 236.08,63.92 229.29,70.71">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="center" type="priority" x="300.00" y="141.42" incLanes="bottom_0 bottom_1 bottom_2 left_0 left_1 left_2 left_3 left_4" intLanes=":center_0_0 :center_1_0 :center_2_0 :center_3_0 :center_3_1 :center_3_2 :center_3_3 :center_3_4" shape="307.58,141.42 307.58,125.42 301.70,125.07 297.43,124.00 294.13,122.15 291.17,119.49 287.91,115.98 283.72,111.56 276.93,118.35 278.81,120.51 279.75,122.28 279.73,123.65 278.77,124.64 276.86,125.22 274.00,125.42 274.00,141.42" radius="10.00">
+        <request index="0" response="11111000" foes="11111000" cont="0"/>
+        <request index="1" response="11111000" foes="11111000" cont="0"/>
+        <request index="2" response="11111000" foes="11111000" cont="0"/>
+        <request index="3" response="00000000" foes="00000111" cont="0"/>
+        <request index="4" response="00000000" foes="00000111" cont="0"/>
+        <request index="5" response="00000000" foes="00000111" cont="0"/>
+        <request index="6" response="00000000" foes="00000111" cont="0"/>
+        <request index="7" response="00000000" foes="00000111" cont="0"/>
+    </junction>
+    <junction id="inflow_highway" type="dead_end" x="0.00" y="141.42" incLanes="" intLanes="" shape="0.00,141.42 0.00,125.42"/>
+    <junction id="inflow_merge" type="dead_end" x="158.58" y="0.00" incLanes="" intLanes="" shape="158.58,0.00 165.37,-6.79"/>
+    <junction id="left" type="priority" x="100.00" y="141.42" incLanes="inflow_highway_0 inflow_highway_1 inflow_highway_2 inflow_highway_3 inflow_highway_4" intLanes=":left_0_0 :left_0_1 :left_0_2 :left_0_3 :left_0_4" shape="100.00,141.42 100.00,125.42 100.00,141.42">
+        <request index="0" response="00000" foes="00000" cont="0"/>
+        <request index="1" response="00000" foes="00000" cont="0"/>
+        <request index="2" response="00000" foes="00000" cont="0"/>
+        <request index="3" response="00000" foes="00000" cont="0"/>
+        <request index="4" response="00000" foes="00000" cont="0"/>
+    </junction>
+    <junction id="right" type="dead_end" x="400.00" y="141.42" incLanes="center_0 center_1 center_2 center_3 center_4" intLanes="" shape="400.00,125.42 400.00,141.42"/>
+
+    <connection from="bottom" to="center" fromLane="0" toLane="0" via=":center_0_0" dir="r" state="m"/>
+    <connection from="bottom" to="center" fromLane="1" toLane="1" via=":center_1_0" dir="r" state="m"/>
+    <connection from="bottom" to="center" fromLane="2" toLane="2" via=":center_2_0" dir="r" state="m"/>
+    <connection from="inflow_highway" to="left" fromLane="0" toLane="0" via=":left_0_0" dir="s" state="M"/>
+    <connection from="inflow_highway" to="left" fromLane="1" toLane="1" via=":left_0_1" dir="s" state="M"/>
+    <connection from="inflow_highway" to="left" fromLane="2" toLane="2" via=":left_0_2" dir="s" state="M"/>
+    <connection from="inflow_highway" to="left" fromLane="3" toLane="3" via=":left_0_3" dir="s" state="M"/>
+    <connection from="inflow_highway" to="left" fromLane="4" toLane="4" via=":left_0_4" dir="s" state="M"/>
+    <connection from="inflow_merge" to="bottom" fromLane="0" toLane="0" via=":bottom_0_0" dir="s" state="M"/>
+    <connection from="inflow_merge" to="bottom" fromLane="1" toLane="1" via=":bottom_0_1" dir="s" state="M"/>
+    <connection from="inflow_merge" to="bottom" fromLane="2" toLane="2" via=":bottom_0_2" dir="s" state="M"/>
+    <connection from="left" to="center" fromLane="0" toLane="0" via=":center_3_0" dir="s" state="M"/>
+    <connection from="left" to="center" fromLane="1" toLane="1" via=":center_3_1" dir="s" state="M"/>
+    <connection from="left" to="center" fromLane="2" toLane="2" via=":center_3_2" dir="s" state="M"/>
+    <connection from="left" to="center" fromLane="3" toLane="3" via=":center_3_3" dir="s" state="M"/>
+    <connection from="left" to="center" fromLane="4" toLane="4" via=":center_3_4" dir="s" state="M"/>
+
+    <connection from=":bottom_0" to="bottom" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":bottom_0" to="bottom" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":bottom_0" to="bottom" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":center_0" to="center" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":center_1" to="center" fromLane="0" toLane="1" dir="r" state="M"/>
+    <connection from=":center_2" to="center" fromLane="0" toLane="2" dir="r" state="M"/>
+    <connection from=":center_3" to="center" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":center_3" to="center" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":center_3" to="center" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":center_3" to="center" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":center_3" to="center" fromLane="4" toLane="4" dir="s" state="M"/>
+    <connection from=":left_0" to="left" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":left_0" to="left" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":left_0" to="left" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":left_0" to="left" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":left_0" to="left" fromLane="4" toLane="4" dir="s" state="M"/>
+
+</net>

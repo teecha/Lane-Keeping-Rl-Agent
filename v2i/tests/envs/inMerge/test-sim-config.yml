@@ -1,0 +1,6 @@
+rl_params:
+  num_agents: 2
+sim_params:
+  max-speed: 35
+  render: false
+  sim_step: 0.1

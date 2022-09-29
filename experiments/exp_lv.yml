@@ -1,0 +1,15 @@
+'ppo_params':
+  'env': 'twoInMergesEnv'
+  'env_config': '/home/mayank/Documents/upgraded-rotary-phone/v2i/experiments/inMerge/sim-config.yml'
+  'workers': 40
+  'num_training_steps': 700
+  'num_steps': 80
+  'tau': 0.95
+  'gamma': 0.9
+  'ppo_iters': 10
+  'mini_batch_size': 128
+  'clip_ratio': 0.1
+  'critic_coef': 0.01
+  'actor_coef': 0.5
+  'entropy_coef': 0.001
+  'lr': 0.0003

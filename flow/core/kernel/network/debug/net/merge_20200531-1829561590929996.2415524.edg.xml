@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+  <edge id="highway_0" type="highwayType" from="node_1" to="node_2" length="200.0"/>
+  <edge id="highway_1" type="highwayType" from="node_2" to="node_3" length="200.0"/>
+  <edge id="merge_one" type="mergeType" from="node_4" to="node_2" length="100"/>
+  <edge id="highway_2" type="highwayType" from="node_3" to="node_5" length="200.0"/>
+  <edge id="highway_3" type="highwayType" from="node_5" to="node_6" length="200.0"/>
+  <edge id="merge_two" type="mergeType" from="node_7" to="node_5" length="100"/>
+</edges>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+  <edge id="highway_0" type="highwayType" from="inflow_highway" to="centre" length="100"/>
+  <edge id="highway_1" type="highwayType" from="centre" to="right" length="100"/>
+</edges>

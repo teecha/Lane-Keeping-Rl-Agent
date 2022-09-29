@@ -1,0 +1,10 @@
+sim_params:
+  sim_step: 0.1
+  render: False
+  max-speed: 30
+  accel: 2.6
+  decel: 4.5
+rl_params:
+  view-size-width: 16
+  view-size-length: 60
+  k-frames: 3

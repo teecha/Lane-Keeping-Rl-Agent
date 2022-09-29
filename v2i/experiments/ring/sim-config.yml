@@ -1,0 +1,3 @@
+sim_params:
+  time_step: 0.1
+  render: True
