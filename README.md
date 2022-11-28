@@ -40,5 +40,8 @@ python -m unittest v2i/tests/envs/inMerge/test_twoInMerge.py
 ```
 
 ## Output Video
-
+Car at 1500 iterations
 https://youtu.be/T-yGhOJTagA
+
+Car at 600 iterations
+https://youtu.be/n1zw-xdBssI
