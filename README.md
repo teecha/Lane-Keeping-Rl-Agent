@@ -41,4 +41,4 @@ python -m unittest v2i/tests/envs/inMerge/test_twoInMerge.py
 
 ## Output Video
 
-![caption](https://youtu.be/T-yGhOJTagA)
+https://youtu.be/T-yGhOJTagA
