@@ -1,4 +1,4 @@
-# V2i
+# Lane changing Rl car
 
 A microscopic traffic simulation platform with vehicle-to-infrastructure network. We use [Flow](https://github.com/flow-project/flow) and SUMO to simulate micro-scopic traffic simulations.
 
@@ -39,3 +39,6 @@ conda acitvate flow
 python -m unittest v2i/tests/envs/inMerge/test_twoInMerge.py
 ```
 
+## Output Video
+
+![caption](https://youtu.be/T-yGhOJTagA)
